@@ -10,5 +10,8 @@ kubectl get pods
 kubectl get pods --namespace=kube-system
 kubectl get namespaces
 kubectl create namespace springboot-app
+ kubectl apply -f pod.yaml
+ kubectl get nodes
+ kubectl delete -f pod.yaml
 
 ```
