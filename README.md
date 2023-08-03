@@ -19,7 +19,10 @@ kubectl delete pods django-app-deployment-56674cb698-9hchq
 kubectl delete -f .\deploy.yaml
 kubectl apply -f .\deploy.yaml
 kubectl get pods -n django-todo-app -o wide
-
+kubectl get pods --namespace=django-todo-app
+kubectl apply -f .\service.yaml
+minikube service djangoservice -n django-todo-app --url 
+minikube config set driver hyperv
 
 ```
 #### Generally we don't use docker in production
