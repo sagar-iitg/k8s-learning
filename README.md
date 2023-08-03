@@ -1,4 +1,5 @@
 
+#### Auto scaling and auto healing is missing in docker
 
 ```
 
@@ -14,6 +15,10 @@ kubectl apply -f pod.yaml
 kubectl get nodes
 kubectl delete -f pod.yaml
 kubectl delete pods -n django-todo-app django-todo-pod
+kubectl delete pods django-app-deployment-56674cb698-9hchq
+kubectl delete -f .\deploy.yaml
+kubectl apply -f .\deploy.yaml
+kubectl get pods -n django-todo-app -o wide
 
 
 ```
