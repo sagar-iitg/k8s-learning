@@ -36,3 +36,13 @@ pod works on node level
 for one app - one deployment file
 
 
+
+### Run Redis
+
+
+
+minikube service redis-service --url
+redis-cli -h 127.0.0.1 -p 60751
+
+
+
