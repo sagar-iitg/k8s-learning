@@ -1,6 +1,11 @@
 
 #### Auto scaling and auto healing is missing in docker
 
+### nginx pod deployment service 
+### mysql pod deployment service
+### same cluster?
+
+
 ```
 minikube status
 minikube start --memory=4096 --cpus=4  --driver=docker
