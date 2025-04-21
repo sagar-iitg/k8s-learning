@@ -2,7 +2,8 @@
 #### Auto scaling and auto healing is missing in docker
 
 ```
-
+minikube status
+minikube start --memory=4096 --cpus=4  --driver=docker
 minikube start --driver=docker
 minikube ssh
 exit
