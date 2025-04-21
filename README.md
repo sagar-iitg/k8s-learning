@@ -2,7 +2,8 @@
 #### Auto scaling and auto healing is missing in docker
 
 ```
-
+minikube status
+minikube start --memory=4096 --cpus=4  --driver=docker
 minikube start --driver=docker
 minikube ssh
 exit
@@ -34,5 +35,16 @@ pod
 api-server
 pod works on node level
 for one app - one deployment file
+
+
+
+### Run Redis
+
+
+```
+minikube service redis-service --url
+redis-cli -h 127.0.0.1 -p 60751
+```
+
 
 
