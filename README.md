@@ -5,6 +5,8 @@
 ### mysql pod deployment service
 ### same cluster?
 
+### namespaces: isolated
+
 
 ```
 minikube status
